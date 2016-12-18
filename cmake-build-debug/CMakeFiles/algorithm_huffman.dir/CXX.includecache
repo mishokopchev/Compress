@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.cpp
+FreqTable.h
+C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h
+
+C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h
+
+C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp
+Node.h
+C:/Users/Mihail/Desktop/algorithm huffman/Node.h
+
+C:/Users/Mihail/Desktop/algorithm huffman/Node.h
+
+C:/Users/Mihail/Desktop/algorithm huffman/main.cpp
+iostream
+-
+map
+-
+Node.h
+C:/Users/Mihail/Desktop/algorithm huffman/Node.h
+

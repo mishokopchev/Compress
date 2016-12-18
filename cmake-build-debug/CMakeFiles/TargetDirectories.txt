@@ -1,0 +1,3 @@
+C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/algorithm_huffman.dir
+C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
