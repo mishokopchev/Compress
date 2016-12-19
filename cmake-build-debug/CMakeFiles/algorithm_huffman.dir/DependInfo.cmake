@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/Entry.cpp" "C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj"
+  "C:/Users/Mihail/Desktop/algorithm huffman/Entry.cpp" "C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj"
   "C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.cpp" "C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj"
   "C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp" "C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/Node.cpp.obj"
   "C:/Users/Mihail/Desktop/algorithm huffman/main.cpp" "C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/main.cpp.obj"

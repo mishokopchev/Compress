@@ -129,17 +129,17 @@ CMakeFiles/algorithm_huffman.dir/Node.cpp.obj.provides.build: CMakeFiles/algorit
 
 
 CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj: CMakeFiles/algorithm_huffman.dir/flags.make
-CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj: Entry.cpp
+CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj: ../Entry.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj"
-	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_huffman.dir\Entry.cpp.obj -c "C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\Entry.cpp"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_huffman.dir\Entry.cpp.obj -c "C:\Users\Mihail\Desktop\algorithm huffman\Entry.cpp"
 
 CMakeFiles/algorithm_huffman.dir/Entry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_huffman.dir/Entry.cpp.i"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\Entry.cpp" > CMakeFiles\algorithm_huffman.dir\Entry.cpp.i
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mihail\Desktop\algorithm huffman\Entry.cpp" > CMakeFiles\algorithm_huffman.dir\Entry.cpp.i
 
 CMakeFiles/algorithm_huffman.dir/Entry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_huffman.dir/Entry.cpp.s"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\Entry.cpp" -o CMakeFiles\algorithm_huffman.dir\Entry.cpp.s
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mihail\Desktop\algorithm huffman\Entry.cpp" -o CMakeFiles\algorithm_huffman.dir\Entry.cpp.s
 
 CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj.requires:
 
