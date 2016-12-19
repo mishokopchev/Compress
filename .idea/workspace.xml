@@ -12,18 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ce317e2-9f0f-4f6a-ae04-29de668b4608" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/objects.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FreqTable.h" afterPath="$PROJECT_DIR$/FreqTable.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Node.cpp" afterPath="$PROJECT_DIR$/Node.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/algorithm_huffman.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Compress" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -378,12 +368,12 @@
       <option name="presentableId" value="Default" />
       <updated>1482052170604</updated>
       <workItem from="1482052174006" duration="7297000" />
-      <workItem from="1482091808017" duration="6362000" />
+      <workItem from="1482091808017" duration="6823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13659000" />
+    <option name="totallyTimeSpent" value="14120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
