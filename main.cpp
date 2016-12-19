@@ -4,12 +4,8 @@
 
 int main() {
 
-
-    std::cout << "Hello, World!" << std::endl;
-    //Node<int,int> node1;
-    //node1 = Node();
-    Node<int,int>* node= new Node();
-    std::cout<<node->getValue();
-
+   // Node<int,int>* node= new Node<int,int>();
+   // std::cout << "Hello, World!" << std::endl;
+//    Node<int,int>* node= new Node<int,int>();
     return 0;
 }

@@ -3,6 +3,7 @@
 
 CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj: ../FreqTable.cpp
 CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj: ../FreqTable.h
+CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj: ../Node.h
 
 CMakeFiles/algorithm_huffman.dir/Node.cpp.obj: ../Node.cpp
 CMakeFiles/algorithm_huffman.dir/Node.cpp.obj: ../Node.h
