@@ -3,5 +3,5 @@ project(algorithm_huffman)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp FreqTable.cpp FreqTable.h Node.cpp Node.h cmake-build-debug/Entry.cpp cmake-build-debug/Entry.h)
+set(SOURCE_FILES main.cpp FreqTable.cpp FreqTable.h Node.cpp Node.h)
 add_executable(algorithm_huffman ${SOURCE_FILES})
