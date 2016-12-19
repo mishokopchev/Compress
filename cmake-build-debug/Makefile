@@ -122,6 +122,33 @@ algorithm_huffman/fast:
 	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/build
 .PHONY : algorithm_huffman/fast
 
+Entry.obj: Entry.cpp.obj
+
+.PHONY : Entry.obj
+
+# target to build an object file
+Entry.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj
+.PHONY : Entry.cpp.obj
+
+Entry.i: Entry.cpp.i
+
+.PHONY : Entry.i
+
+# target to preprocess a source file
+Entry.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Entry.cpp.i
+.PHONY : Entry.cpp.i
+
+Entry.s: Entry.cpp.s
+
+.PHONY : Entry.s
+
+# target to generate assembly for a file
+Entry.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Entry.cpp.s
+.PHONY : Entry.cpp.s
+
 FreqTable.obj: FreqTable.cpp.obj
 
 .PHONY : FreqTable.obj
@@ -212,6 +239,9 @@ help:
 	@echo ... edit_cache
 	@echo ... algorithm_huffman
 	@echo ... rebuild_cache
+	@echo ... Entry.obj
+	@echo ... Entry.i
+	@echo ... Entry.s
 	@echo ... FreqTable.obj
 	@echo ... FreqTable.i
 	@echo ... FreqTable.s

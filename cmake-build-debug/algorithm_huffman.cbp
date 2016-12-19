@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Node.h">
 			<Option target="algorithm_huffman"/>
 		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/Entry.cpp">
+			<Option target="algorithm_huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/cmake-build-debug/Entry.h">
+			<Option target="algorithm_huffman"/>
+		</Unit>
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/main.cpp">
 			<Option target="algorithm_huffman"/>
 		</Unit>
