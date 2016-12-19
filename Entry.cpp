@@ -3,6 +3,7 @@
 //
 
 #include "Entry.h"
+#include "HashMap.h"
 
 
 Entry::Entry(char _key, int _value) {
@@ -22,4 +23,22 @@ char Entry::getKey() const {
 Entry *Entry::getNext() {
     return this->next;
 
+}
+
+int Entry::hash() {
+    int hash = 0;
+    hash = (hash * 37) + (int) (this->key);
+    return hash % TABLE_SIZE;
+}
+
+void Entry::setKey(char _key) {
+    this->key = _key;
+}
+
+void Entry::setNext(Entry *_entry) {
+    this->next = _entry;
+}
+
+void Entry::setValue(int _value) {
+    this->value = -value;
 }

@@ -5,6 +5,7 @@
 #ifndef ALGORITHM_HUFFMAN_ENTRY_H
 #define ALGORITHM_HUFFMAN_ENTRY_H
 
+#include <cmath>
 
 class Entry {
 private:
@@ -17,6 +18,12 @@ public:
     char getKey() const;
     int getValue() const;
     Entry* getNext() ;
+    int hash();
+
+    void setKey(char _key);
+    void setValue(int _value);
+    void setNext(Entry* _entry);
+
 
 
 

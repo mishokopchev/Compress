@@ -176,6 +176,33 @@ FreqTable.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.s
 .PHONY : FreqTable.cpp.s
 
+HashMap.obj: HashMap.cpp.obj
+
+.PHONY : HashMap.obj
+
+# target to build an object file
+HashMap.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj
+.PHONY : HashMap.cpp.obj
+
+HashMap.i: HashMap.cpp.i
+
+.PHONY : HashMap.i
+
+# target to preprocess a source file
+HashMap.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HashMap.cpp.i
+.PHONY : HashMap.cpp.i
+
+HashMap.s: HashMap.cpp.s
+
+.PHONY : HashMap.s
+
+# target to generate assembly for a file
+HashMap.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HashMap.cpp.s
+.PHONY : HashMap.cpp.s
+
 Node.obj: Node.cpp.obj
 
 .PHONY : Node.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... FreqTable.obj
 	@echo ... FreqTable.i
 	@echo ... FreqTable.s
+	@echo ... HashMap.obj
+	@echo ... HashMap.i
+	@echo ... HashMap.s
 	@echo ... Node.obj
 	@echo ... Node.i
 	@echo ... Node.s

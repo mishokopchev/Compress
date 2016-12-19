@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Mihail/Desktop/algorithm huffman/Entry.cpp
+Entry.h
+C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
+HashMap.h
+C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
+
+C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
+cmath
+-
+
 C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.cpp
 FreqTable.h
 C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h
@@ -14,6 +24,14 @@ C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h
 Node.h
 C:/Users/Mihail/Desktop/algorithm huffman/Node.h
 
+C:/Users/Mihail/Desktop/algorithm huffman/HashMap.cpp
+HashMap.h
+C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
+
+C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
+Entry.h
+C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
+
 C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp
 Node.h
 C:/Users/Mihail/Desktop/algorithm huffman/Node.h
@@ -21,10 +39,8 @@ C:/Users/Mihail/Desktop/algorithm huffman/Node.h
 C:/Users/Mihail/Desktop/algorithm huffman/Node.h
 
 C:/Users/Mihail/Desktop/algorithm huffman/main.cpp
+Entry.h
+C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
 iostream
 -
-map
--
-Node.h
-C:/Users/Mihail/Desktop/algorithm huffman/Node.h
 

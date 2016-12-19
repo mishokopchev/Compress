@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h">
 			<Option target="algorithm_huffman"/>
 		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/HashMap.cpp">
+			<Option target="algorithm_huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h">
+			<Option target="algorithm_huffman"/>
+		</Unit>
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp">
 			<Option target="algorithm_huffman"/>
 		</Unit>
