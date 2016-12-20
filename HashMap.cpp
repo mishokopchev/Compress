@@ -22,7 +22,6 @@ void HashMap::put(char _key, int _value) {
         this->table[hash] = new Entry(_key, _value);
     } else {
         Entry *entry = this->table[hash];
-
         while (entry->getNext() != nullptr) {
             entry = entry->getNext();
         }
@@ -34,18 +33,19 @@ void HashMap::put(char _key, int _value) {
     }
     this->size++;
 }
+
 bool HashMap::containsKey(char _key) {
     int hash = Entry(_key, 0).hash();
     if (this->table[hash] == nullptr) {
-        return true;
+        return false;
     }
     Entry *entry = this->table[hash];
     while (entry->getNext() != nullptr && entry->getKey() != _key) {
         entry = entry->getNext();
+    }
         if (entry->getKey() == _key) {
             return true;
         }
-    }
     return false;
 }
 
@@ -60,6 +60,14 @@ int HashMap::get(char _key) {
         return no_key;
     } else {
         Entry *entry = table[hash];
+        while (entry != nullptr && entry->getKey() != _key) {
+            entry = entry->getNext();
+        }
+        if (entry == NULL) {
+            return -1;
+        } else {
+            return entry->getValue();
+        }
 
     }
     return no_key;
