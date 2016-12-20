@@ -10,16 +10,19 @@ HashMap::HashMap() {
     this->table = new Entry *[TABLE_SIZE];
     for (int i = 0; i < TABLE_SIZE; ++i) {
         this->table[i] = nullptr;
+
     }
 
 }
 
 void HashMap::put(char _key, int _value) {
+
     int hash = Entry(_key, _value).hash();
     if (this->table[hash] == nullptr) {
         this->table[hash] = new Entry(_key, _value);
     } else {
         Entry *entry = this->table[hash];
+
         while (entry->getNext() != nullptr) {
             entry = entry->getNext();
         }
@@ -31,10 +34,8 @@ void HashMap::put(char _key, int _value) {
     }
     this->size++;
 }
-
 bool HashMap::containsKey(char _key) {
     int hash = Entry(_key, 0).hash();
-
     if (this->table[hash] == nullptr) {
         return true;
     }
@@ -55,20 +56,15 @@ bool HashMap::isEmpty() {
 int HashMap::get(char _key) {
     int hash = Entry(_key, 0).hash();
     char no_key = -1;
-    if (this->table == nullptr) {
+    if (this->table[hash] == nullptr) {
         return no_key;
     } else {
         Entry *entry = table[hash];
-        while (entry->getNext() != nullptr) {
-            entry = entry->getNext();
-            if (entry->getKey() == _key) {
-                return entry->getKey();
-            }
-        }
-        return no_key;
-    }
-}
 
+    }
+    return no_key;
+
+}
 
 HashMap::~HashMap() {
     for (int index = 0; index < TABLE_SIZE; ++index) {
@@ -85,3 +81,7 @@ HashMap::~HashMap() {
     }
 }
 
+
+void HashMap::put(Entry &entry) {
+    this->put(entry.getKey(), entry.getValue());
+}

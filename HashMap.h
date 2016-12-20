@@ -7,6 +7,7 @@
 
 
 #include "Entry.h"
+#include <iostream>
 
 const int TABLE_SIZE = 256;
 
@@ -29,6 +30,8 @@ public:
     bool containsKey(char _key);
 
     void remove();
+
+    void put(Entry &entry);
 
 
 

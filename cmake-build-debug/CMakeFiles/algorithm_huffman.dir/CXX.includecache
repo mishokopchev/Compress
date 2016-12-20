@@ -31,6 +31,8 @@ C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
 C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
 Entry.h
 C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
+iostream
+-
 
 C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp
 Node.h
@@ -41,6 +43,8 @@ C:/Users/Mihail/Desktop/algorithm huffman/Node.h
 C:/Users/Mihail/Desktop/algorithm huffman/main.cpp
 Entry.h
 C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
+HashMap.h
+C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
 iostream
 -
 
