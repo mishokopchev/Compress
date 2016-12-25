@@ -40,5 +40,9 @@ void Entry::setNext(Entry *_entry) {
 }
 
 void Entry::setValue(int _value) {
-    this->value = -value;
+    this->value = _value;
+
 }
+//std::ostream& Entry::operator<<(std::ostream &ostream, Entry &entry) {
+
+//}

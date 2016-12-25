@@ -176,13 +176,63 @@ CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj.provides: CMakeFiles/algorithm_
 CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj.provides.build: CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj
 
 
+CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj: CMakeFiles/algorithm_huffman.dir/flags.make
+CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj: ../HuffmanTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_huffman.dir\HuffmanTree.cpp.obj -c "C:\Users\Mihail\Desktop\algorithm huffman\HuffmanTree.cpp"
+
+CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mihail\Desktop\algorithm huffman\HuffmanTree.cpp" > CMakeFiles\algorithm_huffman.dir\HuffmanTree.cpp.i
+
+CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mihail\Desktop\algorithm huffman\HuffmanTree.cpp" -o CMakeFiles\algorithm_huffman.dir\HuffmanTree.cpp.s
+
+CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.requires:
+
+.PHONY : CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.requires
+
+CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.provides: CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.provides.build
+.PHONY : CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.provides
+
+CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.provides.build: CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj
+
+
+CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj: CMakeFiles/algorithm_huffman.dir/flags.make
+CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj: ../Tnode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj"
+	C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithm_huffman.dir\Tnode.cpp.obj -c "C:\Users\Mihail\Desktop\algorithm huffman\Tnode.cpp"
+
+CMakeFiles/algorithm_huffman.dir/Tnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm_huffman.dir/Tnode.cpp.i"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Mihail\Desktop\algorithm huffman\Tnode.cpp" > CMakeFiles\algorithm_huffman.dir\Tnode.cpp.i
+
+CMakeFiles/algorithm_huffman.dir/Tnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm_huffman.dir/Tnode.cpp.s"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Mihail\Desktop\algorithm huffman\Tnode.cpp" -o CMakeFiles\algorithm_huffman.dir\Tnode.cpp.s
+
+CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.requires:
+
+.PHONY : CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.requires
+
+CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.provides: CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.provides.build
+.PHONY : CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.provides
+
+CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.provides.build: CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj
+
+
 # Object files for target algorithm_huffman
 algorithm_huffman_OBJECTS = \
 "CMakeFiles/algorithm_huffman.dir/main.cpp.obj" \
 "CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj" \
 "CMakeFiles/algorithm_huffman.dir/Node.cpp.obj" \
 "CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj" \
-"CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj"
+"CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj" \
+"CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj" \
+"CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj"
 
 # External object files for target algorithm_huffman
 algorithm_huffman_EXTERNAL_OBJECTS =
@@ -192,11 +242,13 @@ algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj
 algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/Node.cpp.obj
 algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj
 algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj
+algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj
+algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj
 algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/build.make
 algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/linklibs.rsp
 algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/objects1.rsp
 algorithm_huffman.exe: CMakeFiles/algorithm_huffman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable algorithm_huffman.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Mihail\Desktop\algorithm huffman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable algorithm_huffman.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\algorithm_huffman.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -209,6 +261,8 @@ CMakeFiles/algorithm_huffman.dir/requires: CMakeFiles/algorithm_huffman.dir/Freq
 CMakeFiles/algorithm_huffman.dir/requires: CMakeFiles/algorithm_huffman.dir/Node.cpp.obj.requires
 CMakeFiles/algorithm_huffman.dir/requires: CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj.requires
 CMakeFiles/algorithm_huffman.dir/requires: CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj.requires
+CMakeFiles/algorithm_huffman.dir/requires: CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj.requires
+CMakeFiles/algorithm_huffman.dir/requires: CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj.requires
 
 .PHONY : CMakeFiles/algorithm_huffman.dir/requires
 

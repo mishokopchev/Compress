@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/algorithm_huffman.dir/Node.cpp.obj"
   "CMakeFiles/algorithm_huffman.dir/Entry.cpp.obj"
   "CMakeFiles/algorithm_huffman.dir/HashMap.cpp.obj"
+  "CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj"
+  "CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj"
   "algorithm_huffman.pdb"
   "algorithm_huffman.exe"
   "algorithm_huffman.exe.manifest"

@@ -14,7 +14,7 @@ HashMap::HashMap() {
     }
 
 }
-
+/*
 void HashMap::put(char _key, int _value) {
 
     int hash = Entry(_key, _value).hash();
@@ -33,6 +33,7 @@ void HashMap::put(char _key, int _value) {
     }
     this->size++;
 }
+*/
 
 bool HashMap::containsKey(char _key) {
     int hash = Entry(_key, 0).hash();
@@ -43,9 +44,9 @@ bool HashMap::containsKey(char _key) {
     while (entry->getNext() != nullptr && entry->getKey() != _key) {
         entry = entry->getNext();
     }
-        if (entry->getKey() == _key) {
-            return true;
-        }
+    if (entry->getKey() == _key) {
+        return true;
+    }
     return false;
 }
 
@@ -92,4 +93,50 @@ HashMap::~HashMap() {
 
 void HashMap::put(Entry &entry) {
     this->put(entry.getKey(), entry.getValue());
+}
+
+
+void HashMap::put(char _key, int _value) {
+
+    int hash = Entry(_key, _value).hash();
+    if (this->table[hash] == nullptr) {
+        this->table[hash] = new Entry(_key, _value);
+    } else {
+        Entry *entry = this->table[hash];
+        if (entry->getKey() == _key) {
+            entry->setValue(entry->getValue() + _value);
+            return;
+        }
+
+        while (entry->getNext() != nullptr) {
+            entry = entry->getNext();
+            if (entry->getKey() == _key) {
+                entry->setValue(entry->getValue() + 1);
+                return;
+            }
+
+        }
+        entry->setNext(new Entry(_key, _value));
+
+    }
+    this->size++;
+}
+
+
+void HashMap::create(std::string input) {
+    int size = input.size();
+
+    for (int index = 0; index < size; index++) {
+        char character = input[index];
+
+        if (!this->containsKey(character)) {
+            this->put(character, 0);
+        } else {
+            int value = this->get(character);
+//            this->put()
+        }
+
+    }
+
+
 }

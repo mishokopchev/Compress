@@ -203,6 +203,33 @@ HashMap.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HashMap.cpp.s
 .PHONY : HashMap.cpp.s
 
+HuffmanTree.obj: HuffmanTree.cpp.obj
+
+.PHONY : HuffmanTree.obj
+
+# target to build an object file
+HuffmanTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj
+.PHONY : HuffmanTree.cpp.obj
+
+HuffmanTree.i: HuffmanTree.cpp.i
+
+.PHONY : HuffmanTree.i
+
+# target to preprocess a source file
+HuffmanTree.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.i
+.PHONY : HuffmanTree.cpp.i
+
+HuffmanTree.s: HuffmanTree.cpp.s
+
+.PHONY : HuffmanTree.s
+
+# target to generate assembly for a file
+HuffmanTree.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.s
+.PHONY : HuffmanTree.cpp.s
+
 Node.obj: Node.cpp.obj
 
 .PHONY : Node.obj
@@ -229,6 +256,33 @@ Node.s: Node.cpp.s
 Node.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Node.cpp.s
 .PHONY : Node.cpp.s
+
+Tnode.obj: Tnode.cpp.obj
+
+.PHONY : Tnode.obj
+
+# target to build an object file
+Tnode.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj
+.PHONY : Tnode.cpp.obj
+
+Tnode.i: Tnode.cpp.i
+
+.PHONY : Tnode.i
+
+# target to preprocess a source file
+Tnode.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Tnode.cpp.i
+.PHONY : Tnode.cpp.i
+
+Tnode.s: Tnode.cpp.s
+
+.PHONY : Tnode.s
+
+# target to generate assembly for a file
+Tnode.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Tnode.cpp.s
+.PHONY : Tnode.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -275,9 +329,15 @@ help:
 	@echo ... HashMap.obj
 	@echo ... HashMap.i
 	@echo ... HashMap.s
+	@echo ... HuffmanTree.obj
+	@echo ... HuffmanTree.i
+	@echo ... HuffmanTree.s
 	@echo ... Node.obj
 	@echo ... Node.i
 	@echo ... Node.s
+	@echo ... Tnode.obj
+	@echo ... Tnode.i
+	@echo ... Tnode.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

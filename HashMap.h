@@ -33,6 +33,7 @@ public:
 
     void put(Entry &entry);
 
+    void create(std::string input);
 
 
 

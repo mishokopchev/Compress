@@ -100,10 +100,22 @@
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h">
 			<Option target="algorithm_huffman"/>
 		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/HuffmanTree.cpp">
+			<Option target="algorithm_huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/HuffmanTree.h">
+			<Option target="algorithm_huffman"/>
+		</Unit>
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp">
 			<Option target="algorithm_huffman"/>
 		</Unit>
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Node.h">
+			<Option target="algorithm_huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Tnode.cpp">
+			<Option target="algorithm_huffman"/>
+		</Unit>
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Tnode.h">
 			<Option target="algorithm_huffman"/>
 		</Unit>
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/main.cpp">

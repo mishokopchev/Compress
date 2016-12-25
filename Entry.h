@@ -6,28 +6,37 @@
 #define ALGORITHM_HUFFMAN_ENTRY_H
 
 #include <cmath>
+#include <iostream>
 
 class Entry {
 private:
     char key;
     int value;
-    Entry * next;
+    Entry *next;
 public:
 
-    Entry(char _key,int _value);
+    Entry(char _key, int _value);
+
     char getKey() const;
+
     int getValue() const;
-    Entry* getNext() ;
+
+    Entry *getNext();
+
     int hash();
 
     void setKey(char _key);
+
     void setValue(int _value);
-    void setNext(Entry* _entry);
+
+    void setNext(Entry *_entry);
 
 
-
+    friend std::ostream& operator<<(std::ostream &ostream, Entry &entry);
 
 };
+
+
 
 
 #endif //ALGORITHM_HUFFMAN_ENTRY_H
