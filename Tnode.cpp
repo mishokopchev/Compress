@@ -4,8 +4,17 @@
 
 #include "Tnode.h"
 
+ostream &operator<<(ostream &os, const Tnode &vector) {
+    os << vector.getEntry()->getKey()<< " "<<vector.getEntry()->getValue();
+    return os;
+}
+
 Tnode::Tnode(Entry &entry) {
     this->data = &entry;
+}
+
+Tnode::Tnode(Entry *entry) {
+    this->data = entry;
 }
 
 Tnode *Tnode::getLeft() {
@@ -28,6 +37,6 @@ void Tnode::setEntry(Entry &entry) {
     this->data = &entry;
 }
 
-Entry *Tnode::getEntry() {
+Entry *Tnode::getEntry() const {
     return this->data;
 }

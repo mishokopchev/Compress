@@ -3,5 +3,5 @@ project(algorithm_huffman)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp FreqTable.cpp FreqTable.h Node.cpp Node.h Entry.cpp Entry.h HashMap.cpp HashMap.h HuffmanTree.cpp HuffmanTree.h Tnode.cpp Tnode.h)
+set(SOURCE_FILES main.cpp FreqTable.cpp FreqTable.h Node.cpp Node.h Entry.cpp Entry.h HashMap.cpp HashMap.h HuffmanTree.cpp HuffmanTree.h Tnode.cpp Tnode.h List.hpp)
 add_executable(algorithm_huffman ${SOURCE_FILES})

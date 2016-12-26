@@ -8,6 +8,9 @@
 #include <cmath>
 #include <iostream>
 
+using namespace std;
+
+
 class Entry {
 private:
     char key;
@@ -15,13 +18,15 @@ private:
     Entry *next;
 public:
 
+    Entry();
+    Entry( const Entry &  _entry);
     Entry(char _key, int _value);
-
+    Entry &operator = (Entry const &_entry);
     char getKey() const;
 
     int getValue() const;
 
-    Entry *getNext();
+    Entry *getNext() const;
 
     int hash();
 
@@ -31,12 +36,9 @@ public:
 
     void setNext(Entry *_entry);
 
-
-    friend std::ostream& operator<<(std::ostream &ostream, Entry &entry);
+    friend ostream& operator<<(ostream& os, const Entry& vector);
 
 };
-
-
 
 
 #endif //ALGORITHM_HUFFMAN_ENTRY_H

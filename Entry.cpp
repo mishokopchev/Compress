@@ -5,6 +5,29 @@
 #include "Entry.h"
 #include "HashMap.h"
 
+Entry::Entry() {}
+
+Entry::Entry(const Entry &_entry) {
+    this->key = _entry.getKey();
+    this->value = _entry.getValue();
+    this->next = _entry.getNext();
+
+}
+
+ostream &operator<<(ostream &os, const Entry &vector) {
+    os << vector.getKey() << " " << vector.getValue() << endl;
+    return os;
+}
+
+Entry &Entry::operator=(Entry const &_entry) {
+    if (this != &_entry) {
+        this->key = _entry.getKey();
+        this->value = _entry.getValue();
+        this->next = _entry.getNext();
+    }
+
+    return *this;
+}
 
 Entry::Entry(char _key, int _value) {
     this->key = _key;
@@ -20,7 +43,7 @@ char Entry::getKey() const {
     return this->key;
 }
 
-Entry *Entry::getNext() {
+Entry *Entry::getNext() const {
     return this->next;
 
 }

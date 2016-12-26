@@ -14,6 +14,14 @@ HashMap::HashMap() {
     }
 
 }
+Entry** HashMap::getTable() {
+    return this->table;
+}
+
+int HashMap::getSize() {
+    return this->size;
+}
+
 /*
 void HashMap::put(char _key, int _value) {
 
@@ -122,21 +130,20 @@ void HashMap::put(char _key, int _value) {
     this->size++;
 }
 
+void HashMap::print() {
+    for (int i = 0; i < TABLE_SIZE; ++i) {
+        if (this->table[i] != nullptr) {
+            std::cout << this->table[i]->getKey() << " " << this->table[i]->getValue() << std::endl;
+        }
+    }
+}
 
 void HashMap::create(std::string input) {
     int size = input.size();
 
     for (int index = 0; index < size; index++) {
         char character = input[index];
-
-        if (!this->containsKey(character)) {
-            this->put(character, 0);
-        } else {
-            int value = this->get(character);
-//            this->put()
-        }
-
+        this->put(character, 1);
     }
-
 
 }

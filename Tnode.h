@@ -12,7 +12,7 @@ class Tnode {
 private:
 
     Entry *data;
-    Tnode * left, *right;
+    Tnode *left, *right;
     std::string path;//this will be path for setting the binaey code for a entry
 
 
@@ -20,15 +20,21 @@ public:
 
     Tnode(Entry &entry);
 
-    Tnode * getLeft();
-    Tnode * getRight();
+    Tnode(Entry *entry);
 
-    Entry * getEntry();
-    void setEntry(Entry & entry);
+    Tnode *getLeft();
 
-    void setLeft(Tnode & left);
-    void setRight(Tnode & right);
+    Tnode *getRight();
 
+    Entry *getEntry() const;
+
+    void setEntry(Entry &entry);
+
+    void setLeft(Tnode &left);
+
+    void setRight(Tnode &right);
+
+    friend ostream& operator<<(ostream& os, const Tnode& vector);
 
 };
 

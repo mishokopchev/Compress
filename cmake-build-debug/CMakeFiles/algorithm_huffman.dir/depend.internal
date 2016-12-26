@@ -18,6 +18,7 @@ CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.obj
  C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
  C:/Users/Mihail/Desktop/algorithm huffman/HuffmanTree.cpp
  C:/Users/Mihail/Desktop/algorithm huffman/HuffmanTree.h
+ C:/Users/Mihail/Desktop/algorithm huffman/List.hpp
  C:/Users/Mihail/Desktop/algorithm huffman/Tnode.h
 CMakeFiles/algorithm_huffman.dir/Node.cpp.obj
  C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp
@@ -29,5 +30,7 @@ CMakeFiles/algorithm_huffman.dir/Tnode.cpp.obj
 CMakeFiles/algorithm_huffman.dir/main.cpp.obj
  C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
  C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
+ C:/Users/Mihail/Desktop/algorithm huffman/HuffmanTree.h
+ C:/Users/Mihail/Desktop/algorithm huffman/List.hpp
  C:/Users/Mihail/Desktop/algorithm huffman/Tnode.h
  C:/Users/Mihail/Desktop/algorithm huffman/main.cpp

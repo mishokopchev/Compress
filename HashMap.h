@@ -31,9 +31,15 @@ public:
 
     void remove();
 
+    void print();
+
     void put(Entry &entry);
 
     void create(std::string input);
+
+    Entry** getTable();
+
+    int getSize();
 
 
 

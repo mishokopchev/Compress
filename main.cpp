@@ -1,8 +1,9 @@
 
 #include "Entry.h"
 #include "HashMap.h"
-#include "Tnode.h"
-#include <string>
+#include "List.hpp"
+#include "HuffmanTree.h"
+
 
 int main() {
 
@@ -17,18 +18,26 @@ int main() {
     //std::cout << Entry('2', 0).hash() << std::endl;
 
     HashMap *map = new HashMap();
-    Entry entry1('2',2);
-    std::cout<<entry1.getValue()<<std::endl;
+    Entry entry1('2', 2);
+    std::cout << entry1.getValue() << std::endl;
     entry1.setValue(12);
-    std::cout<<entry1.getValue()<<std::endl;
+    std::cout << entry1.getValue() << std::endl;
+
+    map->create("ABRACADABRA");
+    map->print();
+    std::cout << map->getSize()
+              << std::endl;
+
+    HuffmanTree *tree = new HuffmanTree(map);
+    tree->setLeafs();
 
 
-    map->put('g', 3);
-    map->put('b', 10);
-    map->put('b', 10);
-    map->put('b', 10);
-    map->put('A', 10);
-
+    //map->put('g', 3);
+    //map->put('b', 10);
+    //map->put('b', 10);
+    //map->put('b', 10);
+    //map->put('A', 10);
+/*
     std::cout << map->get('g') << std::endl;
     std::cout << map->get('b') << std::endl;
     std::cout << map->get('A') << std::endl;
@@ -43,7 +52,20 @@ int main() {
     std::string input = "321321";
     std::cout<<input[2];
 
+    map->create("ABRACADRABRA");
+    map->print();
+*/
     //std::cout<<map->get('A')<<std::endl;
 
+    List<Entry> *list = new List<Entry>();
+    list->add(entry);
+    Entry entry2= Entry('1', 3);
+    list->add(entry2);
+    list->add(entry1);
+    list->add(entry);
+    std::cout << list->getSize() << std::endl;
+    std::cout << list->isFull() << std::endl;
+    std::cout<<list->getCurrentSize()<<std::endl;
     return 0;
+
 }

@@ -10,12 +10,14 @@
 #include "Entry.h"
 #include "HashMap.h"
 #include "Tnode.h"
+#include "List.hpp"
 
 class HuffmanTree {
 private:
 
     Tnode *root;
     HashMap *frequentTable;
+    List<Tnode *> *leafs;
 
     void create();
 
@@ -29,8 +31,13 @@ public:
 
     HashMap *getMap();
 
-    HuffmanTree( HashMap &hashMap);
+    HuffmanTree(HashMap &hashMap);
 
+    HuffmanTree(HashMap * hashMap);
+
+    void setPath();
+
+    void setLeafs();
 
 
 };
