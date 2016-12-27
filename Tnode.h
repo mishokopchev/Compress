@@ -15,8 +15,8 @@ private:
     Tnode *left, *right;
     std::string path;//this will be path for setting the binaey code for a entry
 
-
 public:
+    Tnode();
 
     Tnode(Entry &entry);
 

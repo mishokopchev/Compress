@@ -30,8 +30,9 @@ int main() {
 
     HuffmanTree *tree = new HuffmanTree(map);
     tree->setLeafs();
-
-
+    Tnode *node = tree->findMinimumEntry();
+    std::cout << "putki " << *node << std::endl;
+    tree->getLeafs()->print();
     //map->put('g', 3);
     //map->put('b', 10);
     //map->put('b', 10);
@@ -59,13 +60,15 @@ int main() {
 
     List<Entry> *list = new List<Entry>();
     list->add(entry);
-    Entry entry2= Entry('1', 3);
+    Entry entry2 = Entry('1', 3);
     list->add(entry2);
     list->add(entry1);
     list->add(entry);
     std::cout << list->getSize() << std::endl;
     std::cout << list->isFull() << std::endl;
-    std::cout<<list->getCurrentSize()<<std::endl;
+    std::cout << list->getCurrentSize() << std::endl;
+    Entry entry3 = list->get(3);
+    std::cout << entry3 << std::endl;
     return 0;
 
 }

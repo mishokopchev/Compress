@@ -31,12 +31,19 @@ public:
 
     void resize();
 
-    void remove();
+    void remove(int);
 
     void print();
 
     int getCurrentSize();
+
+    T get(int);
 };
+
+template<typename T>
+T List<T>::get(int index) {
+    return this->data[index];
+}
 
 //does not work
 template<typename T>
@@ -46,6 +53,14 @@ void List<T>::print() {
             std::cout << *data[i] << std::endl;
         }
     }
+}
+
+template<typename T>
+void List<T>::remove(int index) {
+    for (int i = index; i < current; ++i) {
+        this->data[i] = this->data[i + 1];
+    }
+    --current;
 }
 
 template<typename T>
