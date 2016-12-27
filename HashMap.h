@@ -29,8 +29,6 @@ public:
 
     bool containsKey(char _key);
 
-    void remove();
-
     void print();
 
     void put(Entry &entry);

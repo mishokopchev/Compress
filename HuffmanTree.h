@@ -18,6 +18,7 @@ private:
     Tnode *root;
     HashMap *frequentTable;
     List<Tnode *> *leafs;
+    
 
 public:
 
@@ -49,7 +50,7 @@ public:
 
     void writeCodes(std::string input);
 
-    Tnode * search(char _key);
+    std::string search(char _key,Tnode * tnode);
 
     std::string getPathByCharackter();
 };

@@ -119,7 +119,18 @@ void HuffmanTree::setCodes(Tnode *tnode) {
     }
 
 }
+//does not work like a bitch
+std::string HuffmanTree::search(char _key, Tnode *tnode) {
+    if (tnode != nullptr) {
+        if (tnode->getEntry()->getKey() == _key) {
+            return tnode->getPath();
+        } else {
+            search(_key, tnode->getLeft());
+            search(_key, tnode->getRight());
+        }
 
+    }
+}
 void HuffmanTree::writeCodes(std::string input) {
     int length = input.length();
     for (int i = 0; i < length; ++i) {

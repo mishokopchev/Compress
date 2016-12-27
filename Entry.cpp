@@ -45,7 +45,6 @@ char Entry::getKey() const {
 
 Entry *Entry::getNext() const {
     return this->next;
-
 }
 
 int Entry::hash() {

@@ -88,12 +88,6 @@
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Entry.h">
 			<Option target="algorithm_huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.cpp">
-			<Option target="algorithm_huffman"/>
-		</Unit>
-		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h">
-			<Option target="algorithm_huffman"/>
-		</Unit>
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/HashMap.cpp">
 			<Option target="algorithm_huffman"/>
 		</Unit>
@@ -109,10 +103,7 @@
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/List.hpp">
 			<Option target="algorithm_huffman"/>
 		</Unit>
-		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp">
-			<Option target="algorithm_huffman"/>
-		</Unit>
-		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Node.h">
+		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Node.hpp">
 			<Option target="algorithm_huffman"/>
 		</Unit>
 		<Unit filename="C:/Users/Mihail/Desktop/algorithm huffman/Tnode.cpp">

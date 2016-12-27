@@ -42,7 +42,6 @@ public:
 
     std::string getPath();
 
-
 };
 
 

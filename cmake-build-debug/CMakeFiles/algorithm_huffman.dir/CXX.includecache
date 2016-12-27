@@ -18,14 +18,6 @@ cmath
 iostream
 -
 
-C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.cpp
-FreqTable.h
-C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h
-
-C:/Users/Mihail/Desktop/algorithm huffman/FreqTable.h
-Node.h
-C:/Users/Mihail/Desktop/algorithm huffman/Node.h
-
 C:/Users/Mihail/Desktop/algorithm huffman/HashMap.cpp
 HashMap.h
 C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
@@ -58,11 +50,11 @@ C:/Users/Mihail/Desktop/algorithm huffman/List.hpp
 iostream
 -
 
-C:/Users/Mihail/Desktop/algorithm huffman/Node.cpp
-Node.h
-C:/Users/Mihail/Desktop/algorithm huffman/Node.h
-
-C:/Users/Mihail/Desktop/algorithm huffman/Node.h
+C:/Users/Mihail/Desktop/algorithm huffman/Node.hpp
+Entry.h
+C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
+HashMap.h
+C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
 
 C:/Users/Mihail/Desktop/algorithm huffman/Tnode.cpp
 Tnode.h
@@ -83,4 +75,6 @@ List.hpp
 C:/Users/Mihail/Desktop/algorithm huffman/List.hpp
 HuffmanTree.h
 C:/Users/Mihail/Desktop/algorithm huffman/HuffmanTree.h
+Node.hpp
+C:/Users/Mihail/Desktop/algorithm huffman/Node.hpp
 

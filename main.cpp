@@ -3,6 +3,7 @@
 #include "HashMap.h"
 #include "List.hpp"
 #include "HuffmanTree.h"
+#include "Node.hpp"
 
 
 int main() {
@@ -43,6 +44,10 @@ int main() {
     tree->setCodes(tree->getRoot());
     std::cout << tree->getLeafs()->get(0)->getPath() << " kurdqw " << std::endl;
     tree->printCodes(tree->getRoot());
+
+    std::cout<< " kurvi4ki "<<tree->search('C',tree->getRoot())<<endl;
+    std::cout<<tree->getLeafs()->getCurrentSize();
+
     //map->put('g', 3);
     //map->put('b', 10);
     //map->put('b', 10);
@@ -82,6 +87,20 @@ int main() {
     Entry entry3 = list->get(3);
     std::cout << entry3 << std::endl;
     */
+
+    /*
+    Node<int, char> *node = new Node<int, char>();
+    node->setKey(12);
+    node->setValue('2');
+
+    std::cout << node->getKey() << " kurvi S" << std::endl;
+
+    Node<int, char> *node1 = new Node<int, char>();
+
+    node1 = node;
+    std::cout<<node1->getKey()<<std::endl;
+
+     */
     return 0;
 
 }

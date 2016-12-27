@@ -149,33 +149,6 @@ Entry.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Entry.cpp.s
 .PHONY : Entry.cpp.s
 
-FreqTable.obj: FreqTable.cpp.obj
-
-.PHONY : FreqTable.obj
-
-# target to build an object file
-FreqTable.cpp.obj:
-	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.obj
-.PHONY : FreqTable.cpp.obj
-
-FreqTable.i: FreqTable.cpp.i
-
-.PHONY : FreqTable.i
-
-# target to preprocess a source file
-FreqTable.cpp.i:
-	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.i
-.PHONY : FreqTable.cpp.i
-
-FreqTable.s: FreqTable.cpp.s
-
-.PHONY : FreqTable.s
-
-# target to generate assembly for a file
-FreqTable.cpp.s:
-	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/FreqTable.cpp.s
-.PHONY : FreqTable.cpp.s
-
 HashMap.obj: HashMap.cpp.obj
 
 .PHONY : HashMap.obj
@@ -229,33 +202,6 @@ HuffmanTree.s: HuffmanTree.cpp.s
 HuffmanTree.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/HuffmanTree.cpp.s
 .PHONY : HuffmanTree.cpp.s
-
-Node.obj: Node.cpp.obj
-
-.PHONY : Node.obj
-
-# target to build an object file
-Node.cpp.obj:
-	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Node.cpp.obj
-.PHONY : Node.cpp.obj
-
-Node.i: Node.cpp.i
-
-.PHONY : Node.i
-
-# target to preprocess a source file
-Node.cpp.i:
-	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Node.cpp.i
-.PHONY : Node.cpp.i
-
-Node.s: Node.cpp.s
-
-.PHONY : Node.s
-
-# target to generate assembly for a file
-Node.cpp.s:
-	$(MAKE) -f CMakeFiles\algorithm_huffman.dir\build.make CMakeFiles/algorithm_huffman.dir/Node.cpp.s
-.PHONY : Node.cpp.s
 
 Tnode.obj: Tnode.cpp.obj
 
@@ -323,18 +269,12 @@ help:
 	@echo ... Entry.obj
 	@echo ... Entry.i
 	@echo ... Entry.s
-	@echo ... FreqTable.obj
-	@echo ... FreqTable.i
-	@echo ... FreqTable.s
 	@echo ... HashMap.obj
 	@echo ... HashMap.i
 	@echo ... HashMap.s
 	@echo ... HuffmanTree.obj
 	@echo ... HuffmanTree.i
 	@echo ... HuffmanTree.s
-	@echo ... Node.obj
-	@echo ... Node.i
-	@echo ... Node.s
 	@echo ... Tnode.obj
 	@echo ... Tnode.i
 	@echo ... Tnode.s

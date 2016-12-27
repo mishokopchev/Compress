@@ -22,27 +22,6 @@ int HashMap::getSize() {
     return this->size;
 }
 
-/*
-void HashMap::put(char _key, int _value) {
-
-    int hash = Entry(_key, _value).hash();
-    if (this->table[hash] == nullptr) {
-        this->table[hash] = new Entry(_key, _value);
-    } else {
-        Entry *entry = this->table[hash];
-        while (entry->getNext() != nullptr) {
-            entry = entry->getNext();
-        }
-        if (entry->getKey() == _key) {
-            entry->setValue(_value);
-        } else {
-            entry->setNext(new Entry(_key, _value));
-        }
-    }
-    this->size++;
-}
-*/
-
 bool HashMap::containsKey(char _key) {
     int hash = Entry(_key, 0).hash();
     if (this->table[hash] == nullptr) {
