@@ -11,7 +11,7 @@ HashMap *HuffmanTree::getMap() {
 HuffmanTree::HuffmanTree(HashMap *hashMap) {
     this->leafs = new List<Tnode *>();
     this->frequentTable = hashMap;
-  //  this->create();
+    //  this->create();
 }
 
 Tnode *HuffmanTree::getRoot() {
@@ -48,6 +48,7 @@ void HuffmanTree::create() {
 
         this->leafs->add(newNode);
     }
+    this->root = this->leafs->get(0);
 }
 
 void HuffmanTree::setLeafs() {
@@ -85,4 +86,30 @@ Tnode *HuffmanTree::findMinimumEntry() {
 
 List<Tnode *> *HuffmanTree::getLeafs() {
     return this->leafs;
+}
+
+void HuffmanTree::setCodes(Tnode *tnode) {
+    if (tnode == nullptr) {
+        return;
+    }
+    if (tnode->getLeft() != nullptr) {
+        std::string answer = tnode->getPath();
+        answer += '0';
+        tnode->getLeft()->setPath(answer);
+        setCodes(tnode->getLeft());
+    }
+    if (tnode->getRight() != nullptr) {
+        std::string answer = tnode->getPath();
+        answer += '1';
+        tnode->getRight()->setPath(answer);
+        setCodes(tnode->getRight());
+    }
+    /*
+    std::string lvalue = tnode->getPath() + _value;
+    tnode->setPath(lvalue);
+
+    setCodes(tnode->getLeft(), "0");
+    setCodes(tnode->getRight(), "1");
+
+     */
 }

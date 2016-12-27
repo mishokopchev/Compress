@@ -36,7 +36,11 @@ int main() {
     tree->create();
     tree->getLeafs()->print();
     Tnode *tnode = tree->getLeafs()->get(0);
-    std::cout << "kuwiii  " << *tnode->getRight()->getRight()->getRight()<< std::endl;
+    std::cout << "kuwiii  " << *tnode<< std::endl;
+    std::string lala = "das";
+    //tree->getRoot()->getLeft()->getLeft()->setPath(lala);
+    std::cout << *tree->getRoot()->getLeft()<<std::endl;
+    tree->setCodes(tree->getRoot());
     //map->put('g', 3);
     //map->put('b', 10);
     //map->put('b', 10);

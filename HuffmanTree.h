@@ -21,7 +21,7 @@ private:
 
 public:
 
-    List<Tnode *> * getLeafs();
+    List<Tnode *> *getLeafs();
 
     void setRoot(Tnode *root);
 
@@ -35,13 +35,13 @@ public:
 
     HuffmanTree(HashMap *hashMap);
 
-    void setPath();
-
     void setLeafs();
 
     Tnode *findMinimumEntry();
 
     void create();
+
+    void setCodes(Tnode *node);
 
 };
 

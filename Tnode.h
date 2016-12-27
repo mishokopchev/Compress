@@ -38,6 +38,10 @@ public:
 
     friend ostream &operator<<(ostream &os, const Tnode &vector);
 
+    void setPath(std::string path);
+
+    std::string getPath();
+
 };
 
 

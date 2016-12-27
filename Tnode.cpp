@@ -17,10 +17,14 @@ ostream &operator<<(ostream &os, const Tnode &vector) {
 
 Tnode::Tnode(Entry &entry) {
     this->data = &entry;
+    this->left = nullptr;
+    this->right = nullptr;
 }
 
 Tnode::Tnode(Entry *entry) {
     this->data = entry;
+    this->left = nullptr;
+    this->right = nullptr;
 }
 
 Tnode *Tnode::getLeft() {
@@ -46,3 +50,12 @@ void Tnode::setEntry(Entry &entry) {
 Entry *Tnode::getEntry() const {
     return this->data;
 }
+
+std::string Tnode::getPath() {
+    return this->path;
+}
+
+void Tnode::setPath(std::string _path) {
+    this->path = _path;
+}
+
