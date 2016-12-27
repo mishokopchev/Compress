@@ -36,17 +36,20 @@ int main() {
     tree->create();
     tree->getLeafs()->print();
     Tnode *tnode = tree->getLeafs()->get(0);
-    std::cout << "kuwiii  " << *tnode<< std::endl;
+    std::cout << "kuwiii  " << *tnode << std::endl;
     std::string lala = "das";
     //tree->getRoot()->getLeft()->getLeft()->setPath(lala);
-    std::cout << *tree->getRoot()->getLeft()<<std::endl;
+    std::cout << *tree->getRoot()->getLeft() << std::endl;
     tree->setCodes(tree->getRoot());
+    std::cout << tree->getLeafs()->get(0)->getPath() << " kurdqw " << std::endl;
+    tree->printCodes(tree->getRoot());
     //map->put('g', 3);
     //map->put('b', 10);
     //map->put('b', 10);
     //map->put('b', 10);
-    //map->put('A', 10);
+    //map->put('A', 10);g
 /*
+
     std::cout << map->get('g') << std::endl;
     std::cout << map->get('b') << std::endl;
     std::cout << map->get('A') << std::endl;

@@ -43,6 +43,15 @@ public:
 
     void setCodes(Tnode *node);
 
+    void printCodes(Tnode *node);
+
+    bool isLeaf(Tnode *node);
+
+    void writeCodes(std::string input);
+
+    Tnode * search(char _key);
+
+    std::string getPathByCharackter();
 };
 
 

@@ -29,8 +29,7 @@ void HuffmanTree::setRoot(Tnode *root) {
 HuffmanTree::HuffmanTree(HashMap &hashMap) {
     this->leafs = new List<Tnode *>();
     this->frequentTable = &hashMap;
-    //this->setLeafs();
-//    this->create();
+
 }
 
 void HuffmanTree::create() {
@@ -88,6 +87,20 @@ List<Tnode *> *HuffmanTree::getLeafs() {
     return this->leafs;
 }
 
+void HuffmanTree::printCodes(Tnode *tnode) {
+
+    if (tnode == nullptr) {
+        return;
+    }
+    cout << tnode->getEntry()->getKey() << " path:\t" << tnode->getPath() << '\n';
+    printCodes(tnode->getRight());
+    printCodes(tnode->getLeft());
+}
+
+bool HuffmanTree::isLeaf(Tnode *node) {
+    return node->getRight() == nullptr && node->getLeft() == nullptr;
+}
+
 void HuffmanTree::setCodes(Tnode *tnode) {
     if (tnode == nullptr) {
         return;
@@ -104,12 +117,12 @@ void HuffmanTree::setCodes(Tnode *tnode) {
         tnode->getRight()->setPath(answer);
         setCodes(tnode->getRight());
     }
-    /*
-    std::string lvalue = tnode->getPath() + _value;
-    tnode->setPath(lvalue);
 
-    setCodes(tnode->getLeft(), "0");
-    setCodes(tnode->getRight(), "1");
+}
 
-     */
+void HuffmanTree::writeCodes(std::string input) {
+    int length = input.length();
+    for (int i = 0; i < length; ++i) {
+
+    }
 }

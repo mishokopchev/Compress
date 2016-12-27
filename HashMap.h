@@ -37,11 +37,9 @@ public:
 
     void create(std::string input);
 
-    Entry** getTable();
+    Entry **getTable();
 
     int getSize();
-
-
 
 };
 
