@@ -11,7 +11,7 @@ HashMap *HuffmanTree::getMap() {
 HuffmanTree::HuffmanTree(HashMap *hashMap) {
     this->leafs = new List<Tnode *>();
     this->frequentTable = hashMap;
-    this->create();
+  //  this->create();
 }
 
 Tnode *HuffmanTree::getRoot() {
@@ -30,11 +30,24 @@ HuffmanTree::HuffmanTree(HashMap &hashMap) {
     this->leafs = new List<Tnode *>();
     this->frequentTable = &hashMap;
     //this->setLeafs();
-    this->create();
+//    this->create();
 }
 
 void HuffmanTree::create() {
 
+    while (this->leafs->getCurrentSize() > 0) {
+
+        Tnode *leftNode = this->findMinimumEntry();
+        Tnode *rightNode = this->findMinimumEntry();
+
+        int integer_value_for_node = leftNode->getEntry()->getValue() + rightNode->getEntry()->getValue();
+        Entry *data = new Entry();
+
+        data->setValue(integer_value_for_node);
+        Tnode *newNode = new Tnode(leftNode, rightNode, data);
+
+        this->leafs->add(newNode);
+    }
 }
 
 void HuffmanTree::setLeafs() {
@@ -54,7 +67,7 @@ Tnode *HuffmanTree::findMinimumEntry() {
     int index = 0, minimumEntry = 1000000000;
     int leafsCurrentSize = this->leafs->getCurrentSize();
 
-    for (int i = 0; i < leafsCurrentSize; ++i) {
+    for (int i = 0; i <= leafsCurrentSize; ++i) {
         Tnode *tnode = this->leafs->get(i);
         int entry_value = tnode->getEntry()->getValue();
         if (minimumEntry > entry_value) {

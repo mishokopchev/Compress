@@ -4,8 +4,14 @@
 
 #include "Tnode.h"
 
+Tnode::Tnode(Tnode *left, Tnode *right, Entry *entry) {
+    this->left = left;
+    this->right = right;
+    this->data = entry;
+}
+
 ostream &operator<<(ostream &os, const Tnode &vector) {
-    os << vector.getEntry()->getKey()<< " "<<vector.getEntry()->getValue();
+    os << vector.getEntry()->getKey() << " " << vector.getEntry()->getValue();
     return os;
 }
 

@@ -19,8 +19,6 @@ private:
     HashMap *frequentTable;
     List<Tnode *> *leafs;
 
-    void create();
-
 public:
 
     List<Tnode *> * getLeafs();
@@ -42,6 +40,8 @@ public:
     void setLeafs();
 
     Tnode *findMinimumEntry();
+
+    void create();
 
 };
 

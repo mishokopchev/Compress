@@ -18,6 +18,8 @@ private:
 public:
     Tnode();
 
+    Tnode(Tnode *left, Tnode *right, Entry *entry);
+
     Tnode(Entry &entry);
 
     Tnode(Entry *entry);
@@ -34,7 +36,7 @@ public:
 
     void setRight(Tnode &right);
 
-    friend ostream& operator<<(ostream& os, const Tnode& vector);
+    friend ostream &operator<<(ostream &os, const Tnode &vector);
 
 };
 
