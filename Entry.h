@@ -38,6 +38,8 @@ public:
 
     friend ostream& operator<<(ostream& os, const Entry& vector);
 
+    friend  istream & operator>>(istream is, Entry &vector);
+
 };
 
 

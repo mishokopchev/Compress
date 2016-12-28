@@ -11,6 +11,7 @@
 #include "HashMap.h"
 #include "Tnode.h"
 #include "List.hpp"
+#include <fstream>
 
 class HuffmanTree {
 private:
@@ -18,7 +19,7 @@ private:
     Tnode *root;
     HashMap *frequentTable;
     List<Tnode *> *leafs;
-    
+
 
 public:
 
@@ -50,10 +51,12 @@ public:
 
     void writeCodes(std::string input);
 
-    std::string search(char _key,Tnode * tnode);
+    std::string search(char _key, Tnode *tnode);
 
-    std::string getPathByCharackter();
-};
+    std::string compress(std::string input);
+
+    void decompress(std::string input);
+};;
 
 
 #endif //ALGORITHM_HUFFMAN_HUFFMANTREE_H

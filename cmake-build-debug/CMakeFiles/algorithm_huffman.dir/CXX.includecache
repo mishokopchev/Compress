@@ -45,16 +45,12 @@ Tnode.h
 C:/Users/Mihail/Desktop/algorithm huffman/Tnode.h
 List.hpp
 C:/Users/Mihail/Desktop/algorithm huffman/List.hpp
+fstream
+-
 
 C:/Users/Mihail/Desktop/algorithm huffman/List.hpp
 iostream
 -
-
-C:/Users/Mihail/Desktop/algorithm huffman/Node.hpp
-Entry.h
-C:/Users/Mihail/Desktop/algorithm huffman/Entry.h
-HashMap.h
-C:/Users/Mihail/Desktop/algorithm huffman/HashMap.h
 
 C:/Users/Mihail/Desktop/algorithm huffman/Tnode.cpp
 Tnode.h
@@ -75,6 +71,4 @@ List.hpp
 C:/Users/Mihail/Desktop/algorithm huffman/List.hpp
 HuffmanTree.h
 C:/Users/Mihail/Desktop/algorithm huffman/HuffmanTree.h
-Node.hpp
-C:/Users/Mihail/Desktop/algorithm huffman/Node.hpp
 

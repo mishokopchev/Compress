@@ -24,7 +24,6 @@ CMakeFiles/algorithm_huffman.dir/main.cpp.obj: ../Entry.h
 CMakeFiles/algorithm_huffman.dir/main.cpp.obj: ../HashMap.h
 CMakeFiles/algorithm_huffman.dir/main.cpp.obj: ../HuffmanTree.h
 CMakeFiles/algorithm_huffman.dir/main.cpp.obj: ../List.hpp
-CMakeFiles/algorithm_huffman.dir/main.cpp.obj: ../Node.hpp
 CMakeFiles/algorithm_huffman.dir/main.cpp.obj: ../Tnode.h
 CMakeFiles/algorithm_huffman.dir/main.cpp.obj: ../main.cpp
 

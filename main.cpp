@@ -3,7 +3,6 @@
 #include "HashMap.h"
 #include "List.hpp"
 #include "HuffmanTree.h"
-#include "Node.hpp"
 
 
 int main() {
@@ -45,11 +44,13 @@ int main() {
     std::cout << tree->getLeafs()->get(0)->getPath() << " kurdqw " << std::endl;
     tree->printCodes(tree->getRoot());
 
-    std::cout<< " kurvi4ki "<<tree->search('C',tree->getRoot())<<endl;
-    std::cout<<tree->getLeafs()->getCurrentSize();
+    //std::cout<< " kurvi4ki "<<tree->search('C',tree->getRoot())<<endl;
+    std::cout << tree->getLeafs()->getCurrentSize();
 
     //map->put('g', 3);
-    //map->put('b', 10);
+    //map->put('b',
+    //
+    // 10);
     //map->put('b', 10);
     //map->put('b', 10);
     //map->put('A', 10);g
@@ -100,7 +101,15 @@ int main() {
     node1 = node;
     std::cout<<node1->getKey()<<std::endl;
 
+     *
      */
+
+    std::cout << tree->getLeafs()->getCurrentSize() << endl;
+
+    cout << "patqt na l: " << tree->search('C', tree->getRoot()) << std::endl;
+
+    std::cout << tree->compress("ABRACADABRA");
+    tree->decompress("01101110100010101101110");
     return 0;
 
 }

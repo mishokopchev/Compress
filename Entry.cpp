@@ -63,8 +63,15 @@ void Entry::setNext(Entry *_entry) {
 
 void Entry::setValue(int _value) {
     this->value = _value;
+}
+
+istream &operator>>(istream is, Entry &vector) {
+    is >> vector.key >> vector.value;
+    return is;
+}
+
+std::ostream &operator<<(std::ostream &ostream, Entry &entry) {
+    ostream << "key: " << entry.getKey() << " value:" << entry.getValue();
+    return ostream;
 
 }
-//std::ostream& Entry::operator<<(std::ostream &ostream, Entry &entry) {
-
-//}

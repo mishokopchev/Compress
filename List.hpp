@@ -21,6 +21,8 @@ public:
 
     ~List();
 
+    List &operator=(List &list);
+
     int getSize();
 
     bool isFull();
@@ -39,6 +41,17 @@ public:
 
     T get(int);
 };
+
+template<typename T>
+List<T> &List<T>::operator=(List<T> &list) {
+    if (this != &list) {
+        for (int i = 0; i < list.getCurrentSize(); ++i) {
+            this->data[i] = list.get(i);
+        }
+        this->current = list.getCurrentSize();
+    }
+    return *this;
+}
 
 template<typename T>
 T List<T>::get(int index) {

@@ -34,6 +34,8 @@ HuffmanTree::HuffmanTree(HashMap &hashMap) {
 
 void HuffmanTree::create() {
 
+    List<Tnode *> *allTnodes = this->leafs;
+
     while (this->leafs->getCurrentSize() > 0) {
 
         Tnode *leftNode = this->findMinimumEntry();
@@ -48,6 +50,7 @@ void HuffmanTree::create() {
         this->leafs->add(newNode);
     }
     this->root = this->leafs->get(0);
+    this->leafs = allTnodes;
 }
 
 void HuffmanTree::setLeafs() {
@@ -117,20 +120,67 @@ void HuffmanTree::setCodes(Tnode *tnode) {
         tnode->getRight()->setPath(answer);
         setCodes(tnode->getRight());
     }
-
 }
+
 //does not work like a bitch
 std::string HuffmanTree::search(char _key, Tnode *tnode) {
     if (tnode != nullptr) {
         if (tnode->getEntry()->getKey() == _key) {
             return tnode->getPath();
         } else {
-            search(_key, tnode->getLeft());
-            search(_key, tnode->getRight());
+            string path = search(_key, tnode->getLeft());
+            if (path == "") {
+                path = search(_key, tnode->getRight());
+            }
+            return path;
         }
-
+    } else {
+        return "";
     }
 }
+
+void HuffmanTree::decompress(std::string input) {
+    int size_of_input = input.length();
+    int currentIndex = 0;
+    Tnode *tnode = new Tnode();
+    tnode = this->root;
+    std::string result = "";
+    while (currentIndex != size_of_input) {
+        if (input[currentIndex] == '0') {
+            tnode = tnode->getLeft();
+            if (isLeaf(tnode)) {
+                result += tnode->getEntry()->getKey();
+            }
+        } else {
+            tnode = tnode->getRight();
+            if (isLeaf(tnode)) {
+                result += tnode
+                        ->getEntry()->getKey();
+            }
+        }
+        currentIndex++;
+    }
+
+    std::cout << result << std::endl;
+}
+
+std::string HuffmanTree::compress(std::string input) {
+    ofstream myfile;
+    myfile.open(input + ".txt");
+    std::string result;
+    myfile.close();
+
+    int length
+            = input.length();
+    for (int i = 0; i < length; ++i) {
+        string value = this->search(input[i], this->root);
+        myfile << value;
+        result += value;
+    }
+    myfile.close();
+    return result;
+}
+
 void HuffmanTree::writeCodes(std::string input) {
     int length = input.length();
     for (int i = 0; i < length; ++i) {

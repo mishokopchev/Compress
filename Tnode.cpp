@@ -4,16 +4,31 @@
 
 #include "Tnode.h"
 
+Tnode::Tnode() {
+
+}
+istream &operator>>(istream is, Tnode &vector) {
+    char key;
+    int value;
+    is >> key;
+    is >> value;
+    vector.data =  new Entry(key, value);
+    return is;
+}
+
+ostream &operator<<(ostream &os, const Tnode &vector) {
+    os << vector.getEntry();
+    os << vector.getPath();
+    return os;
+}
+
+
 Tnode::Tnode(Tnode *left, Tnode *right, Entry *entry) {
     this->left = left;
     this->right = right;
     this->data = entry;
 }
 
-ostream &operator<<(ostream &os, const Tnode &vector) {
-    os << vector.getEntry()->getKey() << " " << vector.getEntry()->getValue();
-    return os;
-}
 
 Tnode::Tnode(Entry &entry) {
     this->data = &entry;
@@ -51,7 +66,7 @@ Entry *Tnode::getEntry() const {
     return this->data;
 }
 
-std::string Tnode::getPath() {
+std::string Tnode::getPath() const {
     return this->path;
 }
 

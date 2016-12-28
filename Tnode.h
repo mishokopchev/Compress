@@ -40,7 +40,13 @@ public:
 
     void setPath(std::string path);
 
-    std::string getPath();
+    std::string getPath() const ;
+
+
+    friend ostream& operator<<(ostream& os, const Tnode& vector);
+
+    friend  istream & operator>>(istream is, Tnode &vector);
+
 
 };
 
