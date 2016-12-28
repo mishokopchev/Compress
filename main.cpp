@@ -108,7 +108,7 @@ int main() {
 
     cout << "patqt na l: " << tree->search('C', tree->getRoot()) << std::endl;
 
-    std::cout << tree->compress("ABRACADABRA");
+    std::cout << tree->compress("ABRACADABRA")<<endl;
     tree->decompress("01101110100010101101110");
     return 0;
 

@@ -145,12 +145,15 @@ void HuffmanTree::decompress(std::string input) {
     Tnode *tnode = new Tnode();
     tnode = this->root;
     std::string result = "";
+    std::string currentCode = "";
     while (currentIndex != size_of_input) {
-        if (input[currentIndex] == '0') {
+        currentCode = input[currentIndex];
+        if (currentCode == "0") {
             tnode = tnode->getLeft();
             if (isLeaf(tnode)) {
                 result += tnode->getEntry()->getKey();
             }
+            currentCode+="0";
         } else {
             tnode = tnode->getRight();
             if (isLeaf(tnode)) {
@@ -159,8 +162,8 @@ void HuffmanTree::decompress(std::string input) {
             }
         }
         currentIndex++;
+        tnode = this->root;
     }
-
     std::cout << result << std::endl;
 }
 
